@@ -1,0 +1,10 @@
+/*********************/
+/*** MEDIA QUERIES ***/
+
+@media only screen and (max-width: 490px) {
+    
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

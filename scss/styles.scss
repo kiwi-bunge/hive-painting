@@ -1,0 +1,35 @@
+/*******************/
+/*** STYLESHEETS ***/
+
+// GENERAL //
+
+@import "general.scss";
+
+
+//////// HOME ////////
+
+// HEADER //
+
+@import "sections/header";
+
+// SERVICES-HOME //
+
+@import "sections/services-home";
+
+// VALUES-HOME //
+
+@import "sections/values-home";
+
+// GET QUOTE-HOME //
+
+@import "sections/get-quote-home";
+
+// FOOTER //
+
+@import "sections/footer";
+
+// MEDIA QUERIES //
+
+@import "_media-queries.scss";
+
+/*******************/
