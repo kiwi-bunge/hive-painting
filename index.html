@@ -26,110 +26,196 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100;400&family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
     
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+
+        <!------------->
+        <!--Bootstrap-->
+        <!------------->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
         <!----------------------->
         <!--Own Style Sheet CSS-->
         <!----------------------->
         <link rel="stylesheet" href="css/main.css">
+
         
     </head>
 
-    <body>
-
-        <header id="header_bookmark">
-            <nav>
-                <ul class="navbar">
-                    <li href="index.html"><img href="index.html" src="public/Logotipo 10.png" alt="logotipo"></li>
-                    <li><a href="" class="navbar_links">Home</a></li>
-                    <li><a href="" class="navbar_links">Projects</a></li>
-                    <li><a href="" class="navbar_links">Services</a></li>
-                    <li><a href="" class="navbar_links">Contact</a></li>
-                </ul>
+    <body href="#top">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <header id="header-bookmark">
+            <div class="covidDisclaimer" id="disclaimer">
+                <p>COVID-19 MESSAGE: WE USE BEST PRACTICES TO AVOID THE SPREAD OF COVID-19</p>
+            </div>
+            <nav class="navbar" id="nav">
+                <div class="logoNavbar">
+                    <img id="logoNav" href="index.html" src="public/logo.png" alt="logotipo">
+                </div>
+                <div class="navbarLinks">
+                    <li><a href="" class="hoverUnderlineAnimation">HOME</a></li>
+                    <li><a href="" class="hoverUnderlineAnimation">ABOUT</a></li>
+                    <li><a href="" class="hoverUnderlineAnimation">PROJECTS</a></li>
+                    <li><a href="" class="hoverUnderlineAnimation">SERVICES</a></li>
+                    <li><a href="" class="hoverUnderlineAnimation">CONTACT</a></li>
+                </div>
             </nav>
+            <div class="contactDetails" id="contact-info">
+                <p>Phone: 044 997 3257</p>
+                <p>Email: hivepainting@gmail.com</p>
+            </div>
         </header>
 
         <main>
             
             <section id="home">
-                <div class="home-container">
-                    <div class="home-image">
-                        <img src="public/home_main.png" alt="house">
+                <div class="homeContainer" id="homeBannerContainer">
+                    <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="public/home_main.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="public/home_main2.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="public/home_main3.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="welcome_title">
-                        <h1>Hive Painting</h1>
-                        <h2>More than 10 years of experience</h2>
-                    </div>   
+                    <div class="home-title">
+                        <h1>TOP QUALITY PAINTERS</h1>
+                        <button><a href="index.html">GET A FREE QUOTE</a></button>
+                    </div>
+                    
+                    <button class="nextSectionButtonHome">
+                        <a href="#servicesSection"><img src="public/scrolldown-button.png" alt="scrolldown-button"></a>
+                    </button>
                 </div>
-                <button>
-                    <a href="#services-section"><img src="public/scrolldown-button.png" alt="scrolldown-button"></a>
-                </button>
+
+   
+
             </section>
 
-            <section id="services-section">
-                <div class="services-container">
+            <section id="servicesSection">
+                <div class="servicesContainer">
                     <div class="row1">
-                        <div class="services">
-                            <h4>Comercial Painting</h4>     
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio fugiat unde optio, dolores voluptatum molestiae nisi dolorum amet quod?</p>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h2>Comercial Painting</h2>
+                                    <img src="public/brush.png" alt="">
+                                </div>
+                            
+                                <div class="services flip-card-back">
+                                    <h4><a href="">Comercial Painting</a></h4>     
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio fugiat unde optio, dolores voluptatum molestiae nisi dolorum amet quod?</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="services">
-                            <h4>Spray Painting</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum esse laudantium commodi et facere quaerat at soluta sapiente recusandae quidem?</p>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h2>Residential Painting</h2>
+                                    <img src="public/residential-painting.png" alt="">
+                                </div>
+                            
+                                <div class="services flip-card-back">
+                                    <h4><a href="">Residential Painting</a></h4>     
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio fugiat unde optio, dolores voluptatum molestiae nisi dolorum amet quod?</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row2">
-                        <div class="services">
-                            <h4>Private Painting</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores labore, fuga nisi vitae dolor!</p>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h2>Wood Stain & Varnish</h2>
+                                    <img src="public/wood-varnish.png" alt="">
+                                </div>
+                            
+                                <div class="services flip-card-back">
+                                    <h4><a href="">Wood Stain & Varnish</a></h4>     
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio fugiat unde optio, dolores voluptatum molestiae nisi dolorum amet quod?</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="services">
-                            <h4>Detailed Finishings</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ea.</p>
-                        </div>  
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <h2>Spray Painting</h2>
+                                    <img src="public/spray-gun.png" alt="">
+                                </div>
+                            
+                                <div class="services flip-card-back">
+                                    <h4><a href="">Spray Painting</a></h4>     
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores distinctio fugiat unde optio, dolores voluptatum molestiae nisi dolorum amet quod?</p>
+                                </div>
+                            </div>
+                        </div> 
                     </div>
                 </div>
-                <button>
+                <button class="nextSectionButton">
                     <a href="#values-section"><img src="public/scrolldown-button.png" alt="scrolldown-button"></a>
                 </button>
             </section>
 
             <section id="values-section">
-                <div class="values-container">
+                <div class="valuesContainer">
                     <div class="values">
-                        <h4>Value 1</h4>
+                        <img src="public/hand-shake.png" alt="">
+                        <h3>Reliable</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sed perferendis assumenda recusandae quaerat iste!</p>
                     </div>
                     <div class="values">
-                        <h4>Value 2</h4>
+                        <img src="public/punctuality.png" alt="">
+                        <h3>Punctual</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sed perferendis assumenda recusandae quaerat iste!</p>
                     </div>
                     <div class="values">
-                        <h4>Value 2</h4>
+                        <img src="public/badge.png" alt="">
+                        <h3>Trustworthy</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sed perferendis assumenda recusandae quaerat iste!</p>
-                    </div>
+                    </div>     
                 </div>
-                <button>
+                <button class="nextSectionButton">
                     <a href="#get-quote-section"><img src="public/scrolldown-button.png" alt="scrolldown-button"></a>
                 </button>
             </section>
 
             <section id="get-quote-section">
-                <div class="get-quote-container">
-                    <div class="quote-text">
+                <div class="getQuoteContainer">
+                    <div class="quoteText">
                         <h3>It's simple...</h3>
                         <h4>Just tell us what you need</h4>
-                        <button><a href="">Get a quote</a></button>
+                        <button><a href="">GET A FREE QUOTE</a></button>
                     </div>
-                    <div class="quote-banner">
-                        <img src="public/get-quote-banner.jpg" alt="laptop">
+                    <div class="quoteBanner">
+                        <img src="public/home_main4.png" alt="laptop">
                     </div>
                 </div>
+                <button class="backToTopButton">
+                    <a href="#top"><img src="public/scrolldown-button.png" alt="scrolldown-button"></a>
+                </button>
             </section>
         </main>
 
         <footer>
-            <div class="footer-container">
+            <div class="footerContainer">
                 <div class="row1">
                     <h4>Join our mailing list ></h4>
                     <div>
@@ -138,24 +224,22 @@
                     </div>
                 </div>
                 <div class="row2">
-                    <ul class="website-links">
+                    <ul class="websiteLinks">
                         <li><a href="#header_bookmark">Home</a></li>
                         <li><a href="">Services</a></li>
                         <li><a href="">Quote</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
-                    <a href="#header_bookmark"><img src="public/Square 10.png" alt=""></a>      
-                </div>
-                <div class="row3">
-                    <ul class="social-icons">
-                        <li><a href=""><img src="public/instagram-icon.png" alt=""></a></li>
-                        <li><a href=""><img src="public/instagram-icon.png" alt=""></a></li>
-                    </ul>
+                    <a href="#header_bookmark"><img src="public/logo1.png" alt=""></a>      
                 </div>
             </div>
         </footer>
 
-        <script src="./responsive-navbar.js"></script>
+
+        <script src="home.js" type=""></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     </body>
+
+    
 </html>    

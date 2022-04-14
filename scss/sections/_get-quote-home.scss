@@ -3,49 +3,64 @@
 
 #get-quote-section {
     height: 850px;
-    background-color: #DCECFF;
+    background-color: white;
 
-    .get-quote-container {
+    .getQuoteContainer {
         display: flex;
         flex-direction: row;
-        margin: 0;
+        margin-bottom: 40px;
         justify-content: space-evenly;
 
-        h3 {
-            font-size: 50px;
-            margin: 0;
-        }
-        
-        h4 {
-            font-size: 40px;
-        }
-
-        button {
-            font-size: 25px;
-            text-align: center;
-            background-color: #A32A8D;
-            padding: 30px;
-            border: none;
-            border-radius: 50%;
-            color: #DCECFF;
-
-            a {
-                color: #DCECFF;
-                text-decoration: none;
-            }
-        }
-
-        .quote-text {
+        .quoteText {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             margin-top: 150px;
+            animation: appear;
+            animation-duration: 2.5s;
+
+        h3 {
+            font-size: 50px;
+            margin: 0;
+            text-shadow: 0px 1px 1px $secondary-color;
+        }
+        
+        h4 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            text-shadow: 0px 1px 1px $secondary-color;
         }
 
-        .quote-banner {
+        button {
+            font-size: 25px;
+            text-align: center;
+            color: $secondary-color;
+            padding: 10px;
+            border: none;
+            border-radius: 5%;
+            background-color: $primary-color;
+            box-shadow: 0px 1px 2px $secondary-color;
+
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+                padding: 5px;
+                font-weight: 600;
+            }
+        }
+
+        @keyframes appear {
+            from {opacity: 0;}
+            to {opacity: 1;}
+          }
+    }
+
+        .quoteBanner {
             height: 500px;
             margin-top: 150px;
+            animation: appear;
+            animation-duration: 2.5s;
 
             img {
                 width: 750px;
@@ -54,6 +69,21 @@
             }
         }
     }
+
+    .backToTopButton {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        border: none;
+        padding: 0;
+        margin: auto; 
+        justify-content: center;
+                  
+          img {
+            width: 70px;
+            transform: scaleY(-1);
+          }
+      }
 }
 
 /****************/

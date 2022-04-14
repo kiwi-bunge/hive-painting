@@ -1,53 +1,67 @@
 /**************/
 /*** VALUES ***/
 
-#values-section {
-    height: 950px;
-    background-image: url(../public/values-background.jpg);
+.valuesContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+    height: 800px;
     background-size: 100%;
-    background-color: #DCECFF;
+    background-color: rgba(252, 191, 7, 1);
 
-    .values-container {
+    .values {
+        width: 500px;
+        height: 600px;
+        margin-top: 150px;
         display: flex;
-        flex-direction: row;
-        margin: 0px 100px 0px 100px;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        animation-name: opacity;
+        animation-duration: 2.5s;
+
+        img {
+            width: 80px;
+        }
         
-        h4 {
-            font-size: 70px;
+        h3 {
+            font-size: 50px;
             text-align: center;
-            color: #DCECFF;
+            color: $secondary-color;
         }
 
         p {
-            font-size: 30px;
+            font-size: 25px;
             text-align: center;
             margin-left: 50px;
             margin-right: 50px;
-            color: #DCECFF;
+            color: $secondary-color;
         }
 
-        .values {
-            width: 500px;
-            margin-top: 150px;
-        }
-    }
-
-    button {
-        display: flex;
-        flex-direction: row;
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        margin: auto; 
-        justify-content: center;
-        margin-top: 185px;
-
-        img {
-            width: 100px;
-            height: 100px;
+        @keyframes opacity {
+            from {opacity: 0;}
+            to {opacity: 1;}
         }
     }
 }
+
+.nextSectionButton {
+    display: flex;
+    width: 100%;
+    border: none;
+    padding: 0px;
+    margin: 0px; 
+    justify-content: right;
+    background-color: rgba(252, 191, 7, 1);
+
+            
+    img {
+        width: 70px;
+        margin-bottom: 50px;
+        margin-right: 25px;
+    }
+}
+
 
 /**************/

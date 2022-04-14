@@ -1,86 +1,94 @@
 /************/
 /*** HOME ***/
 
-.home-container {
+$carousel-indicator-transition: .1s;
 
+.homeContainer {
+    position: relative;
     width: auto;
-    height: 600px;
-    margin: 125px 0px 50px 150px;
+    height: 750px;
+    margin-bottom: 25px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
 
-        .home-image {
+  .carousel {
+    width: 100%;
 
+    .carousel-control-next, .carousel-control-prev {
+      margin: 0px 150px;
+      width: auto;
+    }
+  }
 
-            img {
-                background-color: black;
-                border: 10px double yellow;
-            }
-        }   
+  .home-title {
+    position: absolute;
+    margin: auto;
+    width: 800px;
+    top: 40%;
+    left: 0;
+    right: 0;
+    font-size: 60px;
+    font-weight: 900;
+    color: $secondary-color;
+    text-align: center;
+    animation-name: appear;
+    animation-duration: 2.5s;
 
-        .welcome_title {
+    h1 {
+      color: white;
+      text-shadow: 0px 1px 30px $secondary-color;
+      font-size: 70px;
+      margin: 0;
+      padding-bottom: 25px;
+    }
 
-            left: 50%;
-            color: black;
-            background-color: yellow;
-            box-shadow: 20px 20px 50px black;
-            flex-direction: column;
-            padding: 0px 100px 0px 100px;
-            height: 300px;
-            margin: 150px 150px 150px -50px;
-            justify-items: center;
-            text-align: center;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $primary-color;
+      color: $secondary-color;
+      border-radius: 5px;
+      font-size: 30px;
+      border-color: $primary-color;
+      box-shadow: 0px 1px 30px $secondary-color;
 
-            h1 {
-                display: flex;
-                justify-content: center;
-                padding-top: 35px;
-                font-size: 40px;
-                animation-name: welcome_title;
-                animation-duration: 3s;
-
-            }
-            
-            @keyframes welcome_title {
-                from {color: yellow;}
-                to {color: black;}
-                from {font-size: 20px;}
-                to {font-size: 40px;}
-            }
-
-            h2 {
-                display: flex;
-                justify-content: center;
-                font-size: 20px;
-                margin: 30px;
-                animation-name: welcome_sub_title;
-                animation-duration: 3s;
-            }
-
-            @keyframes welcome_sub_title {
-                from {color: yellow;}
-                to {color: black;}
-                from {font-size: 10px;}
-                to {font-size: 20px;}
-            }
-        }
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+        font-weight: 500;
+        padding: 5px;
+        
+      }
+    }
+  }  
+  
+  @keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 }
+  
 
-
-button {
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin: auto; 
-    justify-content: center;
-
+.nextSectionButtonHome {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 15px; 
+  justify-content: right;
             
     img {
-        width: 100px;
-        height: 100px;
+      width: 70px;
     }
 }
+
 

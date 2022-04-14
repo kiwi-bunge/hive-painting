@@ -1,22 +1,22 @@
-.footer-container {
+.footerContainer {
     height: 400px;
-    background-color: black;
+    background-color: $secondary-color;
 
     .row1 {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        padding: 20px;
+        padding: 80px;
     
         h4 {
-            color: #DCECFF;
+            color: white;
             font-size: 30px;
             }
         
         input {
-            background-color: #DCECFF;
-            color: #A32A8D;
+            background-color: white;
+            color: $secondary-color;
             width: 400px;
             text-align: left;
             align-self: center;
@@ -24,8 +24,8 @@
         }
 
         button {
-            background-color: #A32A8D;
-            color: #DCECFF;
+            background-color: $primary-color;
+            color: $secondary-color;
             width: 100px;
             height: 40px;
             border: 1;
@@ -38,16 +38,22 @@
     .row2 {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         height: 150px;
+        margin-left: 320px;
+        margin-right: 320px;
 
         img {
             width: 200px;
         }
 
-        .website-links {
+        .websiteLinks {
             padding: 0;
+
+            li {
+                list-style: none;
+            }
         }
 
         a {
@@ -55,12 +61,13 @@
             color: white;
             font-size: 20px;
             text-align: left;
+            
             }
     }
 
     .row3 {
 
-        .social-icons {
+        .socialIcons {
             display: flex;
             flex-direction: row;
             justify-content: center;
