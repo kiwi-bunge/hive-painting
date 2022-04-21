@@ -1,23 +1,9 @@
 /**************/
 /*** HEADER ***/
 
-.covidDisclaimer {
-    background-color: $secondary-color;
-    color: $primary-color;
-    padding: 4px;
-    transition: all 0.7s linear;
-    z-index: 3;
-
-    p {        
-        font-size: 15px;
-        margin: auto;
-        width: max-content;
-        align-items: center;
-    }
-}
-
 .navbar {
     background-color: white;
+    opacity: 0.85;
     top: 0;
     display: flex;
     flex-direction: row;
@@ -33,8 +19,9 @@
 
         img {
             display: flex;
-            width: 200px;
+            width: 220px;
             height: auto;
+            padding: 15px;
         }
     }
     
@@ -52,6 +39,7 @@
                 text-decoration: none;
                 color: $secondary-color;
                 border-bottom: none;
+                text-shadow: 10px 10px 12px $secondary-color;
             }
         }
     }
@@ -80,33 +68,26 @@
         transform-origin: bottom left;
     }
 
+    .horizontalNav {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
-.fixed-nav nav#nav{
-    position: fixed;
+.vertical {
+    position: sticky;
     opacity: 0.75;
     background-color: white;
-    top: 0;
+    left: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding: 0px;
     transition: all 0.7s linear;
 }
 
-.contactDetails {
-    display: flex;
-    background-color: $primary-color;
-    justify-content: center;
-    transition: all 0.7s ease-in;
-
-    p {
-        margin: 0px 50px;
-        font-size: 20px;
-        font-weight: 500;
-        padding: 5px;
-    }
-}
 
 /**************/

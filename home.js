@@ -1,23 +1,31 @@
 /**********************/
 /** NAVBAR ON SCROLL **/
 
-const disclaimer = document.querySelector("#disclaimer");
-const contact = document.querySelector("#contact-info");
-const disclaimerTop = nav.offsetTop;
+document.addEventListener("DOMContentLoaded", function(){
 
-function fixedNavbar () {
+topNavbar = document.querySelector("#nav");
+// const homeContainer = document.querySelector("#home");
+websiteTop = document.querySelector("#nav").offsetHeight;
 
-    if(window.scrollY >= disclaimerTop) {
-        document.body.style.paddingTop = disclaimer.offsetHeight + "px";  
-        document.body.classList.add("fixed-nav");
-        document.querySelector("#contact-info").classList.add("hidden");
+if(topNavbar){
 
-    } else {
-        document.body.style.paddingTop = 0;
-        document.body.classList.remove("fixed-nav");
-        document.querySelector("#contact-info").classList.remove("hidden");
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function() {
+
+        let scrollTop = window.scrollY;
+
+        if(scrollTop <lastScrollTop) {
+
+            topNavbar.classList.remove("horizontalNav");
+            topNavbar.classList.add("verticalNav")
+
+        } else {
+
+            topNavbar.classList.remove("verticalNav");
+            topNavbar.classList.add("horizontalNav");
+        }
+        lastScrollTop = scrollTop;
+        });
     }
-    window.addEventListener("scroll", fixedNavbar)
-}
-
-fixedNavbar();
+});

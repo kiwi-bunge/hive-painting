@@ -8,6 +8,11 @@ html {
 
 body {
     margin: 0;
+    background-image: url("/public/bigstock-Background-with-D-hexagons-pa-417542800.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: bottom;
 }
 
 $primary-color: #fcbe07;
