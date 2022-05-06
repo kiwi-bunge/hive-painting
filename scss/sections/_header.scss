@@ -2,7 +2,7 @@
 /*** HEADER ***/
 
 .navbar {
-    background-color: white;
+    background-color: $secondary-color;
     opacity: 0.85;
     top: 0;
     display: flex;
@@ -37,9 +37,9 @@
 
             a {
                 text-decoration: none;
-                color: $secondary-color;
+                color: $primary-color;
                 border-bottom: none;
-                text-shadow: 10px 10px 12px $secondary-color;
+                text-shadow: 1px 1px 12px $primary-color;
             }
         }
     }
